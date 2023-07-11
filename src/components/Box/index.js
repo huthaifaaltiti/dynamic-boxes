@@ -43,6 +43,8 @@ export default function Box({ onAddNewBox, boxName, boxesNames }) {
               value={newBoxName}
               onChange={handleInputChange}
               onBlur={handleBlur}
+
+              placeholder="Type then click outside"
             />
           </div>
         )}
