@@ -1,22 +1,32 @@
-.boxBody {
-  width: 20rem;
-  height: 20rem;
+.boxCont {
+  display: flex;
+}
 
-  background-color: brown;
+.boxBody {
+  width: 15rem;
+  height: 15rem;
+  border-radius: .5rem;
+
+  background-color: var(--color-gr-d3);
+  color: var(--color-bl);
+  border: 1px solid var(--color-gr-d2);
+
+  
 
   display: flex;
-
+  justify-content: flex-end;
   text-align: center;
 }
 
-.boxBody input {
-  display: block;
-
+.boxNameCont{
   width: 90%;
   height: 100%;
 
-  background-color: transparent;
-  border: none;
+  display: grid;
+  place-items: center;
+
+  font-size: 4rem;
+  text-transform: uppercase;
 }
 
 .boxBody span {
@@ -28,10 +38,23 @@
   display: grid;
   place-items: center;
 
-  transition: all .1s linear;
+  cursor: pointer;
+
+  transition: all 0.1s linear;
 }
 
 .boxBody span:hover {
- transform: scale(1.3);
- background-color: darkred;
+  border-radius: .2rem;
+  transform: scale(1.2);
+  background-color: var(--color-gr-d2);
+}
+
+.inputCont {
+  width: 15rem;
+  height: 15rem;
+}
+
+.inputCont input {
+  width: 100%;
+  height: 100%;
 }

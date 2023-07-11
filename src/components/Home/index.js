@@ -1,5 +1,9 @@
+// react
 import React, { useState } from "react";
+
+// component
 import Box from "../Box/index";
+// styles
 import styles from "./styles.module.css";
 
 export default function Home() {
@@ -9,6 +13,8 @@ export default function Home() {
     setBoxesNames((prevBoxesNames) => {
       const newList = [...prevBoxesNames];
       newList.splice(index, 0, newName);
+      // console.log("newList: ", newList);
+
       return newList;
     });
   };
@@ -19,8 +25,8 @@ export default function Home() {
         <div key={boxName}>
           <Box
             boxName={boxName}
-            onAddNewBox={handleAddNewBox}
             boxesNames={boxesNames}
+            onAddNewBox={handleAddNewBox}
           />
         </div>
       ))}

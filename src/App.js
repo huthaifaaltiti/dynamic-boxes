@@ -6,7 +6,7 @@ import Home from "./components/Home";
 function App() {
   return (
     <div className="App">
-      <p>Main Page</p>
+      <h2>Dynamic Boxes (Demo)</h2>
       <Home />
     </div>
   );

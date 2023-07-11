@@ -3,3 +3,11 @@
   width: 90%;
   margin: 0 auto;
 }
+
+.App h2 {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--color-bl);
+
+  margin: 3rem;
+}
